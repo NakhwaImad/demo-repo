@@ -1,0 +1,123 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Colors */
+:root {
+  --dark: #0f2a24;
+  --green: #2f7d5a;
+  --light: #f4f7f6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+}
+
+.logo {
+  color: var(--green);
+  font-weight: 600;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("D:\work\practice\images\hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.hero-content p {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20%;
+}
+
+.section h3 {
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+.section p,
+.section li {
+  line-height: 1.6;
+  color: #444;
+}
+
+.section.light {
+  background: var(--light);
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 40px;
+  background: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .section {
+    padding: 60px 10%;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .hero-content h2 {
+    font-size: 36px;
+  }
+}
